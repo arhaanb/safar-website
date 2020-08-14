@@ -27,23 +27,19 @@
     <h3>The problem</h3>
     <div class="row">
       <div class="seven columns text">
+        <p>Travel is arguably one of the most integral parts of a person's life. Airplanes have dominated the air and airports were bustling cities, until they became the vehicle of transfer of the COVID- 19 virus. Global and local markets have all but collapsed and governments around the world are in a dire status, trying to strike a balance between keeping their market economies going, averting unemployment and deprivation of the poor while trying to respond to public health essentials.</p>
+        <p>The metro is a lifeline for most of the working class, around 1.5 million use it daily, or rather, 1.5 million used to use it daily.</p>
+        <p>Another issue would be the fact that currently, people are scared of visiting public places due to the fear of crowds in the metro. Yet, people depend on the service for their livelihood.</p>
         <p>
-          Researchers worldwide are working around the clock to find a vaccine against SARS-CoV-2, the virus causing the COVID-19 pandemic. A fast-tracked vaccine development process could speed a successful candidate to market in approximately 12-18 months.
-          When a vaccine is available though, it’s going to be chaotic. Hospitals and camps will get crowded and that could lead to a lot of problems.
-        </p>
-        <p>Another issue would be the fact that currently, people are scared of visiting public places due to the fear of crowds. This creates a lot of problems as people need to go out to get daily nessecities.</p>
-        <p>
-          To tackle both these problems, we present
-          <b>Cura</b>.
-          An app that will help you gain immunity against covid, as well as return to the normal life you had to abandon due to this pandemic.
-          For a detailed explanation of Cura, visit
+          We want to help them get back their means of commute. Therefore we created
+          <b>Safar</b>. An app that will help you travel in the Metro again, and return to the normal life you had to abandon due to this pandemic. For a detailed explanation of Safar,
           <a
-            href="https://cura.arhaanb.co/present"
-          >this page</a>.
+            href="/present"
+          >visit this page</a>.
         </p>
       </div>
       <div class="five columns">
-        <img src="@/assets/safarpng.png" alt="MOCKUP" class="mock" draggable="false" />
+        <img src="@/assets/yoyoanotherone.png" alt="MOCKUP" class="mock" draggable="false" />
       </div>
     </div>
     <div class="u-cf"></div>
@@ -59,22 +55,13 @@
       </div>
       <div class="seven columns">
         <h3>Our app</h3>
-
+        <p>You start off using Safar by logging in and linking your Aarogya Setu account to the app, which is essential to be allowed to travel in the Metro.</p>
         <p>On the hospitals page, the user can see various hospitals across India, along with the number of vaccines they have. This way the user can decide which hospital they wish to visit.</p>
+        <p>The routes page will allow you to easily find multiple routes to reach your destination, while telling you the nearest stations, and interesting facts about them. This was developed by one of our creators, Arhaan Bahadur.</p>
+        <p>On the Add Money page, users can add money to their E-wallet, which serves as an online version of the Metro Card, and you can even purchase tokens for your ride on it. And get a QR code for your ride.</p>
         <p>
-          The Vaccines page provides insight into the progress of upcoming vaccines, and the workings of the completed COV6699EE vaccine (developed by Aditya Pramar and Arhaan Bahadur ;). This page
-          serves as an info point for users
-        </p>
-        <p>
-          On the Request passes page, users can request a
-          <b>Cura Pass</b>. Through the
-          <b>Cura Pass</b>, they are given a time slot in which to visit the place they requested for.
-        </p>
-        <p>
-          We also built an API using NodeJS, Express and MongoDB, to manage all users and certified hospitals from one place. Check it out at
-          <a
-            href="//api.arhaanb.co/cura"
-          >api.arhaanb.co/cura</a>.
+          We also built an API using NodeJS, Express and MongoDB, to locate and find all stations, routes, and information from one place. Check it out at our
+          <a href="//github.com/arhaanb/safar-api">Github</a>.
         </p>
       </div>
     </div>
@@ -144,7 +131,7 @@
         </div>
       </div>
 
-			<div class="box four columns">
+      <div class="box four columns">
         <img src="@/assets/sid.jpg" alt="Aditya Pramar" draggable="false" />
         <div class="info">
           <h4>Siddhayak Goyal</h4>
@@ -184,7 +171,7 @@ export default {
 
 <style scoped>
 .pages img {
-  width: 50%;
+  width: 70%;
   margin-top: 2em;
 }
 .mock {
@@ -202,7 +189,7 @@ export default {
   border-color: #1961fb;
   border-radius: 1em;
   margin: 1em;
-  padding: 1em;
+  padding: 2em 3em;
 }
 .boxcard img {
   width: 60%;

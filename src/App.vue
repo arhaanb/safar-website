@@ -38,7 +38,7 @@
             <a href="//github.com/arhaanb/safar-website" class="link" target="_blank">Source</a>
             <a href="//github.com/arhaanb/safar" class="link" target="_blank">App Source</a>
             <a
-              href="https://docs.google.com/presentation/d/1pdfX32vAxwiUQw27m2o2Y14uZts3Ykcj0B9hCOYgtcs/edit?usp=sharing"
+              href="/present"
               class="link"
               target="_blank"
             >Presentation</a>
@@ -89,12 +89,12 @@ textarea {
 ::-moz-selection {
   /* Code for Firefox */
   color: #222;
-  background: rgba(187, 104, 212, 0.5);
+  background: #9ebdff;
 }
 
 ::selection {
   color: #222;
-  background: rgba(187, 104, 212, 0.5);
+  background: #9ebdff;
 }
 
 img,
@@ -149,7 +149,7 @@ br {
 }
 
 #nav a.router-link-exact-active {
-  color: rgb(171, 84, 197);
+  color: #4674d8;
 }
 
 .right {
