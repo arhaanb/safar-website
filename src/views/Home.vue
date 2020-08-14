@@ -7,7 +7,7 @@
           <p>A new way to travel the Delhi metro during the pandemic. Check out our app for more dynamic content.</p>
           <div class="block noselect">
             <a href="#" download="Cura">
-              <button>Coming soon</button>
+              <button disabled>Coming soon</button>
             </a>
             <router-link to="/about" class="more">
               Learn more
@@ -85,12 +85,12 @@ button {
   font-family: "raleway";
 }
 button:hover {
-  background: #103ea0;
+  background: #1961fb !important;
   color: #fff;
 }
-button:active {
+/* button:active {
   color: #fff;
-}
+} */
 a {
   color: #1961fb;
   text-decoration: none;

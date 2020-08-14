@@ -3,7 +3,7 @@
     <div v-if="submitted" class="six columns submitted">
       <h4>Thank you for registering. You can continue on the Cura mobile app.</h4>
       <a href="#" download="Cura">
-        <button>Coming soon</button>
+        <button disabled>Coming soon</button>
       </a>
     </div>
     <div v-if="!submitted" class="top">
