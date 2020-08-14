@@ -9,7 +9,7 @@
     <div v-if="!submitted" class="top">
       <form @submit.prevent="submit" class="five columns submitted">
         <h2 class="zero">Register</h2>
-        <p>Stay safe with Cura.</p>
+        <p>Stay safe with Safar.</p>
         <div v-if="error">{{error}}</div>
 
         <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
@@ -87,11 +87,11 @@ export default {
         username: "",
         password: "",
         password2: "",
-        vaccinated: 0
+        vaccinated: 0,
       },
       error: null,
       loading: false,
-      submitted: false
+      submitted: false,
     };
   },
   methods: {
@@ -111,26 +111,26 @@ export default {
             this.form.username + "@minet.com",
             this.form.password
           )
-          .then(data => {
+          .then((data) => {
             data.user
               .updateProfile({
-                displayName: this.form.name
+                displayName: this.form.name,
               })
               .then(() => {
                 axios
                   .post(`https://api.arhaanb.co/cura/users`, {
                     username: this.form.username,
-                    vaccinated: this.form.vaccinated
+                    vaccinated: this.form.vaccinated,
                   })
-                  .then(response => {})
-                  .catch(e => {
+                  .then((response) => {})
+                  .catch((e) => {
                     this.errors.push(e);
                   });
                 this.loading = false;
                 this.submitted = true;
               });
           })
-          .catch(err => {
+          .catch((err) => {
             if (
               err.message ==
               "The email address is already in use by another account."
@@ -143,8 +143,8 @@ export default {
             this.loading = false;
           });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

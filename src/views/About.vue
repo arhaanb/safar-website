@@ -5,23 +5,18 @@
     <br class="nvm" />
     <br />
     <!-- <div class="flex-center"> -->
-    <h2 class="center zero">Cura, by MINET</h2>
+    <h2 class="center zero">Safar, by MINET</h2>
     <h5 class="center">An app that will keep you safe.</h5>
     <br />
     <div class="flex-center">
       <div class="flexbruhh center">
         <div class="boxcard">
-          <h4 class="zero" style="margin-top: 0.6em;">Vaccines</h4>
-          <p>Helping you manage the distribution of vaccines throughout the country, so that you stay safe.</p>
+          <h4 class="zero" style="margin-top: 0.6em;">Safe Metro Stations</h4>
+          <p>Safar introduces a new procedure for metro sttaions to follow during the COVID 19 pandemis. It also gives the added benefit of zero contact at the station.</p>
         </div>
         <div class="boxcard">
-          <h4>
-            <img src="https://i.postimg.cc/Z5C73fnX/CuraPass.png" alt draggable="false" />
-          </h4>
-          <p>
-            A new way to
-            <b>explore</b> during these difficult times.
-          </p>
+          <h4 class="zero" style="margin-top: 0.6em;">Travel Hygeine Kits</h4>
+          <p>Safar sells cheap Travel Hygeine Kits to the consumers, so that they can take extra precautions while travelling the Metro.</p>
         </div>
       </div>
     </div>
@@ -165,17 +160,17 @@ export default {
     return {
       info: null,
       loading: true,
-      date: ""
+      date: "",
     };
   },
   async mounted() {
     await axios
       .get("https://covid19.mathdro.id/api/countries/india")
-      .then(response => (this.info = response.data));
+      .then((response) => (this.info = response.data));
     var timebro = this.info.lastUpdate;
     this.date = new Date(timebro);
     this.loading = false;
-  }
+  },
 };
 </script>
 

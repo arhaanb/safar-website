@@ -4,7 +4,7 @@
       <div id="nav">
         <div class="logo">
           <router-link to="/">
-            <img src="@/assets/cura.png" alt="Cura" class="cura" />
+            <img src="@/assets/Group 1.png" alt="Cura" class="cura" />
           </router-link>
         </div>
         <div class="right">
