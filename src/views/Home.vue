@@ -79,24 +79,24 @@ export default {
   align-items: center;
 }
 button {
-  background: rgb(187, 104, 212);
+  background: #1961fb;
   color: #fff;
   border: none;
   font-family: "raleway";
 }
 button:hover {
-  background: rgb(150, 79, 172);
+  background: #103ea0;
   color: #fff;
 }
 button:active {
   color: #fff;
 }
 a {
-  color: rgb(187, 104, 212);
+  color: #1961fb;
   text-decoration: none;
 }
 a:hover {
-  color: rgb(150, 79, 172);
+  color: #103ea0;
 }
 .more {
   margin-left: 1.5em;

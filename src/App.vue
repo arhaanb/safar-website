@@ -4,7 +4,7 @@
       <div id="nav">
         <div class="logo">
           <router-link to="/">
-            <img src="@/assets/Group 1.png" alt="Cura" class="cura" />
+            <img src="@/assets/Group 1.png" alt="Safar" class="cura" />
           </router-link>
         </div>
         <div class="right">
@@ -35,12 +35,17 @@
       <div class="container">
         <div class="flex">
           <div class="socials">
-            <a href="//github.com/arhaanb/cura" class="link" target="_blank">Source</a>
-            <a href="//github.com/AdityaPramar/Cura" class="link" target="_blank">App Source</a>
-            <a href="/present" class="link" target="_blank">Presentation</a>
+            <a href="//github.com/arhaanb/safar-website" class="link" target="_blank">Source</a>
+            <a href="//github.com/arhaanb/safar" class="link" target="_blank">App Source</a>
+            <a
+              href="https://docs.google.com/presentation/d/1pdfX32vAxwiUQw27m2o2Y14uZts3Ykcj0B9hCOYgtcs/edit?usp=sharing"
+              class="link"
+              target="_blank"
+            >Presentation</a>
             <br class="anti-nvm" />
-            <a href="//arhaanb.co" class="link" target="_blank">Arhaan Bahadur</a>
-            <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya Pramar</a>
+            <a href="//arhaanb.co" class="link" target="_blank">Arhaan</a>
+            <a href="//aditya-pramar.herokuapp.com" class="link" target="_blank">Aditya</a>
+            <a href="//instagram.com/sidthesketcher" class="link" target="_blank">Siddhayak</a>
           </div>
           <h6 class="title text">
             Made with

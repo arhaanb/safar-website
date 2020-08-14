@@ -23,7 +23,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: rgb(171, 84, 197);
+	background-color: #1961fb;
 }
 
 a {
@@ -53,7 +53,7 @@ a {
 	right: -0.1em;
 	bottom: 0;
 	transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-	background-color: #d74fdb52;
+	background-color: #1961fb41;
 }
 
 .link:hover:after {
@@ -61,14 +61,14 @@ a {
 }
 
 button {
-	background: rgb(187, 104, 212);
+	background: #1961fb;
 	color: #fff;
 	border: none;
 	font-family: "raleway";
 }
 
 button:hover {
-	background: rgb(150, 79, 172);
+	background: #1243ad;
 	color: #fff;
 }
 
