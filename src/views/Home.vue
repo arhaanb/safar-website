@@ -6,8 +6,8 @@
           <h1>Safar.</h1>
           <p>A new way to travel the Delhi metro during the pandemic. Check out our app for more dynamic content.</p>
           <div class="block noselect">
-            <a href="/Cura.apk" download="Cura">
-              <button>Download</button>
+            <a href="#" download="Cura">
+              <button>Coming soon</button>
             </a>
             <router-link to="/about" class="more">
               Learn more
