@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+/* scrollbar shit */
+
+::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+	background-color: white;
+	/* border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #6F248F;
+	border-left-color: #6F248F; */
+	width: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(171, 84, 197);
+}
+
+a {
+	text-decoration: none;
+	color: #121314;
+	position: relative;
+}
+
+.link {
+	margin-right: 1em;
+}
+
+.link.zero {
+	margin: 0;
+}
+
+.link:hover {
+	color: #121314;
+}
+
+.link:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 60%;
+	left: -0.1em;
+	right: -0.1em;
+	bottom: 0;
+	transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+	background-color: #d74fdb52;
+}
+
+.link:hover:after {
+	top: 0%;
+}
+
+button {
+	background: rgb(187, 104, 212);
+	color: #fff;
+	border: none;
+	font-family: "raleway";
+}
+
+button:hover {
+	background: rgb(150, 79, 172);
+	color: #fff;
+}
+
+button:active {
+	color: #fff;
+}
+
+input {
+	background-color: rgba(255, 255, 255, 0.336);
+}
+
+.anti-nvm {
+	display: none;
+}
+
+@media (max-width: 550px) {
+	.anti-nvm {
+		display: block;
+	}
+}
