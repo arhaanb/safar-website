@@ -9,14 +9,18 @@
     <h5 class="center">An app that will keep you safe.</h5>
     <br />
     <div class="flex-center">
-      <div class="flexbruhh center">
-        <div class="boxcard">
-          <h4 class="zero" style="margin-top: 0.6em;">Safe Metro Stations</h4>
-          <p>Safar introduces a new procedure for metro sttaions to follow during the COVID 19 pandemis. It also gives the added benefit of zero contact at the station.</p>
+      <div class="center">
+        <div class="six columns">
+          <div class="boxcard">
+            <h4 class="zero" style="margin-top: 0.6em;">Safe Metro Stations</h4>
+            <p>Safar introduces a new procedure for metro stations to follow during the COVID 19 pandemic. It also gives the added benefit of zero contact at the station.</p>
+          </div>
         </div>
-        <div class="boxcard">
-          <h4 class="zero" style="margin-top: 0.6em;">Travel Hygeine Kits</h4>
-          <p>Safar sells cheap Travel Hygeine Kits to the consumers, so that they can take extra precautions while travelling the Metro.</p>
+        <div class="six columns">
+          <div class="boxcard">
+            <h4 class="zero" style="margin-top: 0.6em;">Travel Hygeine Kits</h4>
+            <p>Safar sells cheap Travel Hygeine Kits to the consumers, so that they can take extra precautions while travelling the Metro.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -61,7 +65,9 @@
         <p>On the Add Money page, users can add money to their E-wallet, which serves as an online version of the Metro Card, and you can even purchase tokens for your ride on it. And get a QR code for your ride.</p>
         <p>
           We also built an API using NodeJS, Express and MongoDB, to locate and find all stations, routes, and information from one place. Check it out at our
-          <a href="//github.com/arhaanb/safar-api">Github</a>.
+          <a
+            href="//github.com/arhaanb/safar-api"
+          >Github</a>.
         </p>
       </div>
     </div>
@@ -184,11 +190,11 @@ export default {
   justify-content: center;
 }
 .boxcard {
-  width: 40%;
+  /* width: 40%; */
   border-style: solid;
   border-color: #1961fb;
   border-radius: 1em;
-  margin: 1em;
+  /* margin: 1em; */
   padding: 2em 3em;
 }
 .boxcard img {
@@ -282,7 +288,6 @@ a {
     flex-direction: column;
   }
   .boxcard {
-    width: 90%;
     margin: 0;
     margin-bottom: 1em;
   }
