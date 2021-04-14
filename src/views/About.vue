@@ -43,7 +43,7 @@
         </p>
       </div>
       <div class="five columns">
-        <img src="@/assets/yoyoanotherone.png" alt="MOCKUP" class="mock" draggable="false" />
+        <img src="@/assets/yoyoanotherone.png" loading="lazy" alt="MOCKUP" class="mock" draggable="false" />
       </div>
     </div>
     <div class="u-cf"></div>
@@ -54,7 +54,7 @@
     <div class="row">
       <div class="five columns pages">
         <p class="center">
-          <img src="@/assets/mockupye.png" alt="MOCKUP" draggable="false" />
+          <img loading="lazy" src="@/assets/mockupye.png" alt="MOCKUP" draggable="false" />
         </p>
       </div>
       <div class="seven columns">
@@ -122,7 +122,7 @@
     <h3>The team</h3>
     <div class="team">
       <div class="box four columns">
-        <img src="@/assets/arhaan.jpg" alt="Arhaan Bahadur" draggable="false" />
+        <img loading="lazy" src="@/assets/arhaan.jpg" alt="Arhaan Bahadur" draggable="false" />
         <div class="info">
           <h4>Arhaan Bahadur</h4>
           <p>Co-Founder</p>
@@ -130,7 +130,7 @@
       </div>
 
       <div class="box four columns">
-        <img src="@/assets/ap.png" alt="Aditya Pramar" draggable="false" />
+        <img loading="lazy" src="@/assets/ap.png" alt="Aditya Pramar" draggable="false" />
         <div class="info">
           <h4>Aditya Pramar</h4>
           <p>Co-Founder</p>
@@ -138,7 +138,7 @@
       </div>
 
       <div class="box four columns">
-        <img src="@/assets/sid.jpg" alt="Aditya Pramar" draggable="false" />
+        <img loading="lazy" src="@/assets/sid.jpg" alt="Aditya Pramar" draggable="false" />
         <div class="info">
           <h4>Siddhayak Goyal</h4>
           <p>Co-Founder</p>
@@ -148,7 +148,7 @@
     </div>
     <p class="center">
       <a href="//minet.co">
-        <img src="@/assets/minte.png" alt="MINET hot" class="minte" draggable="false" />
+        <img loading="lazy" src="@/assets/minte.png" alt="MINET hot" class="minte" draggable="false" />
       </a>
     </p>
   </div>
@@ -190,11 +190,9 @@ export default {
   justify-content: center;
 }
 .boxcard {
-  /* width: 40%; */
   border-style: solid;
   border-color: #1961fb;
   border-radius: 1em;
-  /* margin: 1em; */
   padding: 2em 3em;
 }
 .boxcard img {

@@ -64,7 +64,7 @@
         </button>
       </form>
       <div class="seven columns">
-        <img src="@/assets/reg.png" alt class="reg" />
+        <img src="@/assets/reg.png" loading="lazy" alt class="reg" />
       </div>
     </div>
   </div>

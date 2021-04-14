@@ -30,6 +30,7 @@
             alt
             class="floating mockup"
             draggable="false"
+						loading="lazy"
           />
         </div>
       </div>
