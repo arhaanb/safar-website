@@ -14,7 +14,7 @@
         <p>Stay safe with Safar.</p>
         <div v-if="error">{{ error }}</div>
 
-        <label for="username" class="col-md-4 col-form-label text-md-right">
+        <label for="username">
           Username
         </label>
 
@@ -25,7 +25,7 @@
           v-model="form.username"
         />
 
-        <label for="password" class="col-md-4 col-form-label text-md-right">
+        <label for="password">
           Password
         </label>
 
