@@ -13,17 +13,13 @@
         </div>
       </div>
     </div>
-    <main class="App__main">
-      <transition name="fade" mode="out-in">
-        <router-view class="router" />
-      </transition>
+    <main>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
-    <!-- <iframe
-        allow="microphone;"
-        width="350"
-        height="430"
-        src="https://console.dialogflow.com/api-client/demo/embedded/df5e4bfc-1fb5-45eb-aebd-5c0148aa95e1"
-    ></iframe>-->
     <df-messenger
       chat-icon="f8dd78d6-1704-4697-a88d-e1f04ce67a54_x.png"
       intent="WELCOME"
@@ -34,7 +30,7 @@
     <footer class="footer noselect">
       <div class="container">
         <div class="flex">
-          <div class="socials">
+          <div class="socialsyo">
             <a href="//github.com/arhaanb/safar-website" class="link" target="_blank">Source</a>
             <a href="//github.com/arhaanb/safar" class="link" target="_blank">App Source</a>
             <a
@@ -48,8 +44,7 @@
             <a href="//instagram.com/sidthesketcher" class="link" target="_blank">Siddhayak</a>
           </div>
           <h6 class="title text">
-            Made with
-            <i class="fa fa-heart heart"></i> by MINET
+            Made with 💖 by MINET
           </h6>
         </div>
       </div>
@@ -87,7 +82,6 @@ textarea {
 }
 
 ::-moz-selection {
-  /* Code for Firefox */
   color: #222;
   background: #9ebdff;
 }
@@ -108,21 +102,6 @@ br {
   -ms-user-select: none;
   user-select: none;
 }
-/* Transitions */
-
-.fade-enter-active,
-.fade-leave-active {
-  transition-duration: 0.3s;
-  transition-property: opacity;
-  transition-timing-function: ease;
-}
-
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
-}
-
-/* ----------- */
 
 #app {
   -webkit-font-smoothing: antialiased;

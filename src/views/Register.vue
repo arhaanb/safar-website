@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <div v-if="submitted" class="six columns submitted">
-      <h4>Thank you for registering. You can continue on the Cura mobile app.</h4>
+      <h4>
+        Thank you for registering. You can continue on the Cura mobile app.
+      </h4>
       <a href="#" download="Cura">
         <button disabled>Coming soon</button>
       </a>
@@ -10,29 +12,25 @@
       <form @submit.prevent="submit" class="five columns submitted">
         <h2 class="zero">Register</h2>
         <p>Stay safe with Safar.</p>
-        <div v-if="error">{{error}}</div>
+        <div v-if="error">{{ error }}</div>
 
-        <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
+        <label for="username" class="col-md-4 col-form-label text-md-right">
+          Username
+        </label>
 
         <input
-          id="username"
           type="text"
-          class="form-control"
-          name="username"
-          value
           required
-          autofocus
           placeholder="Username"
           v-model="form.username"
         />
 
-        <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+        <label for="password" class="col-md-4 col-form-label text-md-right">
+          Password
+        </label>
 
         <input
-          id="password"
           type="password"
-          class="form-control"
-          name="password"
           required
           placeholder="Password"
           v-model="form.password"
@@ -40,10 +38,7 @@
 
         <label for="password">Confirm password</label>
         <input
-          id="password2"
           type="password"
-          class="form-control"
-          name="password2"
           required
           placeholder="Confirm password"
           v-model="form.password2"
@@ -75,41 +70,40 @@
   </div>
 </template>
 
-
 <script>
-import firebase from "firebase";
-import axios from "axios";
+import firebase from 'firebase'
+import axios from 'axios'
 export default {
   data() {
     return {
       form: {
-        name: "",
-        username: "",
-        password: "",
-        password2: "",
+        name: '',
+        username: '',
+        password: '',
+        password2: '',
         vaccinated: 0,
       },
       error: null,
       loading: false,
       submitted: false,
-    };
+    }
   },
   methods: {
     submit() {
-      this.loading = true;
+      this.loading = true
       if (this.form.password.length < 6) {
-        this.error = "Password should be atleast 6 characters.";
-        this.loading = false;
+        this.error = 'Password should be atleast 6 characters.'
+        this.loading = false
       }
       if (this.form.password !== this.form.password2) {
-        this.error = "Passwords don't match.";
-        this.loading = false;
+        this.error = "Passwords don't match."
+        this.loading = false
       } else {
         firebase
           .auth()
           .createUserWithEmailAndPassword(
-            this.form.username + "@minet.com",
-            this.form.password
+            this.form.username + '@minet.com',
+            this.form.password,
           )
           .then((data) => {
             data.user
@@ -124,28 +118,28 @@ export default {
                   })
                   .then((response) => {})
                   .catch((e) => {
-                    this.errors.push(e);
-                  });
-                this.loading = false;
-                this.submitted = true;
-              });
+                    this.errors.push(e)
+                  })
+                this.loading = false
+                this.submitted = true
+              })
           })
           .catch((err) => {
             if (
               err.message ==
-              "The email address is already in use by another account."
+              'The email address is already in use by another account.'
             ) {
-              this.error = "This username is not available.";
+              this.error = 'This username is not available.'
             } else {
-              this.error = err.message;
+              this.error = err.message
             }
-            this.submitted = false;
-            this.loading = false;
-          });
+            this.submitted = false
+            this.loading = false
+          })
       }
     },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -280,7 +274,7 @@ textarea:focus {
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 4px;

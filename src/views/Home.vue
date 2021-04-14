@@ -4,14 +4,16 @@
       <div class="row section1">
         <div class="moreresp five columns text">
           <h1>Safar.</h1>
-          <p>A new way to travel the Delhi metro during the pandemic. Check out our app for more dynamic content.</p>
+          <p>
+            A new way to travel the Delhi metro during the pandemic. Check out
+            our app for more dynamic content.
+          </p>
           <div class="block noselect">
             <a href="#" download="Cura">
               <button disabled>Coming soon</button>
             </a>
             <router-link to="/about" class="more">
-              Learn more
-              <i class="fas fa-long-arrow-alt-right"></i>
+              Learn more &rarr;
             </router-link>
           </div>
         </div>
@@ -23,7 +25,12 @@
             <br />
             <br />
           </div>
-          <img src="@/assets/safarweb.png" alt class="floating mockup" draggable="false" />
+          <img
+            src="@/assets/safarweb.png"
+            alt
+            class="floating mockup"
+            draggable="false"
+          />
         </div>
       </div>
     </div>
@@ -32,8 +39,8 @@
 
 <script>
 export default {
-  name: "Home",
-};
+  name: 'Home',
+}
 </script>
 
 <style scoped>
@@ -82,7 +89,7 @@ button {
   background: #1961fb;
   color: #fff;
   border: none;
-  font-family: "raleway";
+  font-family: 'raleway';
 }
 button:hover {
   background: #1961fb !important;
