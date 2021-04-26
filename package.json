@@ -1,26 +1,32 @@
 {
-  "name": "safar-website",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "vite --open",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "firebase": "^8.3.1",
-    "vue": "^3.0.11",
-    "vue-router": "^4.0.6"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^1.2.0",
-    "@vue/compiler-sfc": "^3.0.9",
-    "vite": "^2.1.5"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+	"name": "safar-website",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "vite --open",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"prettier": {
+		"tabWidth": 2,
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": true
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"firebase": "^8.3.1",
+		"vue": "^3.0.11",
+		"vue-router": "^4.0.6"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^1.2.0",
+		"@vue/compiler-sfc": "^3.0.9",
+		"vite": "^2.1.5"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not dead"
+	]
 }
